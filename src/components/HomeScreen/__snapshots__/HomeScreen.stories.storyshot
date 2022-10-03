@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@mykeels/sticky-notes components/HomeScreen Index 1`] = `
+<div
+  className="relative bg-gray-200 block sticky-region cursor-pointer"
+  onDoubleClick={[Function]}
+/>
+`;
