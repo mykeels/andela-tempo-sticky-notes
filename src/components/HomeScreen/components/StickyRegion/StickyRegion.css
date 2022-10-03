@@ -1,4 +1,15 @@
 .sticky-region {
-    min-width: 1024px;
-    min-height: 768px;
+  min-width: 1024px;
+  min-height: 768px;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+.sticky-region:empty::before {
+  content: "Double-click to create Sticky Note";
+  text-align: center;
+  display: block;
+  padding-top: 35%;
+  color: white;
+  font-size: 32px;
+  font-weight: 100px;
 }

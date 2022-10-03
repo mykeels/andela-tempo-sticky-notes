@@ -7,4 +7,10 @@ export default {
   component: StickyRegion
 };
 
-export const Index = () => <StickyRegion />;
+export const Empty = () => <StickyRegion />;
+
+export const WithContent = () => (
+  <StickyRegion>
+    <div>Hello World</div>
+  </StickyRegion>
+);
