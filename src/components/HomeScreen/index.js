@@ -117,6 +117,13 @@ export const HomeScreen = ({ getNotes, saveNotes }) => {
             height={DEFAULT_NOTE_HEIGHT}
             zIndex={preview.zIndex}
             key={`preview-${preview?.position?.left}-${preview?.position?.top}`}
+            {...{
+              onDragStart: () => {
+                setCallback(() => () => {
+                  setPreview(null);
+                });
+              }
+            }}
           ></StickyNote>
         ) : null}
       </>
