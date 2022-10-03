@@ -2,6 +2,8 @@
 
 This project was built to meet the requirements of a Front-end developer Hiring test by Tempo.io.
 
+![Preview Image](https://user-images.githubusercontent.com/11996508/193679530-35abf198-5fbf-43de-8148-337ee0c8c5d4.png)
+
 ## 1. Planning Phase
 
 See [Project Description Document](./docs/Front-end%20developer%20Assessment.pdf).
@@ -37,10 +39,6 @@ To start the app, run `npm start`.
 ## 5. Testing
 
 Frontend tests use snapshot testing via Jest and Storybook.
-
-## Preview
-
-![Preview Image](https://user-images.githubusercontent.com/11996508/193679530-35abf198-5fbf-43de-8148-337ee0c8c5d4.png)
 
 
 
