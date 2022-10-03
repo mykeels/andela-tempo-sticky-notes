@@ -1,14 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`@mykeels/sticky-notes components/StickyNote Index 1`] = `
+exports[`@mykeels/sticky-notes components/StickyNote Custom Size 1`] = `
 <div
   className="bg-gray-100 inline-block p-0"
 >
   <div
-    className="bg-blue px-2 py-2 text-right block w-full"
+    className="bg-blue  px-2 py-2 text-right block w-full relative overflow-visible sticky-header"
   >
     <button
-      className="text-2xl text-gray-200 inline-block focus:outline px-4 relative"
+      className="text-2xl text-gray-200 inline-block focus:outline px-4 relative sticky-header-button"
+      onClick={[Function]}
     >
       <span
         className="relative bottom-2"
@@ -18,13 +19,47 @@ exports[`@mykeels/sticky-notes components/StickyNote Index 1`] = `
     </button>
   </div>
   <textarea
-    className="bg-gray-100"
+    className="bg-gray-100 text-white text-lg"
+    onChange={[Function]}
     onMouseUp={[Function]}
     style={
       Object {
-        "height": 70,
+        "height": 290,
         "resize": "both",
-        "width": 100,
+        "width": 320,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`@mykeels/sticky-notes components/StickyNote Index 1`] = `
+<div
+  className="bg-gray-100 inline-block p-0"
+>
+  <div
+    className="bg-blue  px-2 py-2 text-right block w-full relative overflow-visible sticky-header"
+  >
+    <button
+      className="text-2xl text-gray-200 inline-block focus:outline px-4 relative sticky-header-button"
+      onClick={[Function]}
+    >
+      <span
+        className="relative bottom-2"
+      >
+        ...
+      </span>
+    </button>
+  </div>
+  <textarea
+    className="bg-gray-100 text-white text-lg"
+    onChange={[Function]}
+    onMouseUp={[Function]}
+    style={
+      Object {
+        "height": 130,
+        "resize": "both",
+        "width": 160,
       }
     }
   />
