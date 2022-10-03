@@ -1,7 +1,8 @@
 import "./StickyRegion.css";
 
-import React from "react";
+import React, { useContext, useState } from "react";
 import classNames from "classnames/dedupe";
+import { DeleteContext } from "../../../../common/contexts/delete.context";
 
 /**
  * @param {object} props
@@ -16,6 +17,8 @@ export const StickyRegion = ({
   onDoubleClick,
   ...props
 }) => {
+  const [dragOver, setDragOver] = useState(false);
+  const { callback } = useContext(DeleteContext)
   return (
     <div
       {...props}
@@ -30,6 +33,27 @@ export const StickyRegion = ({
         });
       }}
     >
+      <div
+        className={classNames(
+          "delete-region h-16 bg-red block w-full opacity-0 text-center text-2xl py-4 text-white",
+          {
+            "opacity-50": dragOver
+          }
+        )}
+        onDragOver={(e) => {
+          setDragOver(true);
+          e.preventDefault();
+        }}
+        onDragLeave={() => {
+          setDragOver(false);
+        }}
+        onDrop={() => {
+          if (typeof callback === "function") {
+            callback();
+          }
+          setDragOver(false);
+        }}
+      >Drop Note to Delete</div>
       {children}
     </div>
   );

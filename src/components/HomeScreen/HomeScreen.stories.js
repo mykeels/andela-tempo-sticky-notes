@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { QueryClient, QueryClientProvider } from "react-query";
+import { DeleteContextProvider } from "../../common/contexts/delete.context";
 import { HomeScreen } from "./";
 
 export default {
@@ -54,10 +55,12 @@ export const WithNotes = () => {
   ]);
   return (
     <QueryClientProvider client={queryClient}>
-      <HomeScreen
-        getNotes={async () => notes}
-        saveNotes={async (notes) => setNotes(notes)}
-      />
+      <DeleteContextProvider>
+        <HomeScreen
+          getNotes={async () => notes}
+          saveNotes={async (notes) => setNotes(notes)}
+        />
+      </DeleteContextProvider>
     </QueryClientProvider>
   );
 };

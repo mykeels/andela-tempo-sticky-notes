@@ -1,6 +1,7 @@
 import React from "react";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { BrowserRouter, HashRouter, Routes, Route } from "react-router-dom";
+import { DeleteContextProvider } from "./common/contexts/delete.context";
 
 import { HomeScreen } from "./components";
 import { useBaseHref } from "./hooks";
@@ -16,11 +17,13 @@ function App() {
   const Router = useHashRouter ? HashRouter : BrowserRouter;
   return (
     <QueryClientProvider client={queryClient}>
+      <DeleteContextProvider>
         <Router basename={baseHref}>
           <Routes>
             <Route path="/" element={<HomeScreen />}></Route>
           </Routes>
         </Router>
+      </DeleteContextProvider>
     </QueryClientProvider>
   );
 }

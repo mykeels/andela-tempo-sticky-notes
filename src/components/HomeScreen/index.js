@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useQuery } from "react-query";
 import { v4 as uuid } from "uuid";
+import { DeleteContext } from "../../common/contexts/delete.context";
 import { useCacheInvalidation } from "../../hooks";
 
 import { StickyNote } from "./components/StickyNote";
@@ -22,6 +23,7 @@ export const HomeScreen = ({ getNotes, saveNotes }) => {
   const [preview, setPreview] = useState(null);
   const { data: notes = [] } = useQuery(["notes"], getNotes);
   const { updateCache } = useCacheInvalidation(["notes"], 100);
+  const { setCallback } = useContext(DeleteContext);
   /** @param {string} text */
   const addNote = (text) => {
     if (!text) {
@@ -48,7 +50,12 @@ export const HomeScreen = ({ getNotes, saveNotes }) => {
     const newNotes = notes.map((n) =>
       n.id === note.id ? { ...n, ...note } : n
     );
-    console.log(note);
+    saveNotes(newNotes);
+    updateCache(() => newNotes);
+  };
+  /** @param {Partial<Note>} note */
+  const deleteNote = (note) => {
+    const newNotes = notes.filter((n) => n.id !== note.id);
     saveNotes(newNotes);
     updateCache(() => newNotes);
   };
@@ -157,6 +164,15 @@ export const HomeScreen = ({ getNotes, saveNotes }) => {
               text
             })
           }
+          {...{
+            onDragStart: () => {
+              setCallback(() => () => {
+                if (confirm("Are you sure you want to delete this note?")) {
+                  deleteNote(note);
+                }
+              });
+            }
+          }}
         ></StickyNote>
       ))}
     </StickyRegion>

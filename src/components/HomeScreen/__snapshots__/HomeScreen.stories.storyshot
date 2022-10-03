@@ -4,7 +4,16 @@ exports[`@mykeels/sticky-notes components/HomeScreen Empty 1`] = `
 <div
   className="relative bg-gray-200 block sticky-region cursor-pointer"
   onDoubleClick={[Function]}
-/>
+>
+  <div
+    className="delete-region h-16 bg-red block w-full opacity-0 text-center text-2xl py-4 text-white"
+    onDragLeave={[Function]}
+    onDragOver={[Function]}
+    onDrop={[Function]}
+  >
+    Drop Note to Delete
+  </div>
+</div>
 `;
 
 exports[`@mykeels/sticky-notes components/HomeScreen With Notes 1`] = `
@@ -13,9 +22,18 @@ exports[`@mykeels/sticky-notes components/HomeScreen With Notes 1`] = `
   onDoubleClick={[Function]}
 >
   <div
+    className="delete-region h-16 bg-red block w-full opacity-0 text-center text-2xl py-4 text-white"
+    onDragLeave={[Function]}
+    onDragOver={[Function]}
+    onDrop={[Function]}
+  >
+    Drop Note to Delete
+  </div>
+  <div
     className="absolute bg-gray-100 inline-block p-0"
     draggable={true}
     onDragEnd={[Function]}
+    onDragStart={[Function]}
     style={
       Object {
         "left": 100,
@@ -56,6 +74,7 @@ exports[`@mykeels/sticky-notes components/HomeScreen With Notes 1`] = `
     className="absolute bg-gray-100 inline-block p-0"
     draggable={true}
     onDragEnd={[Function]}
+    onDragStart={[Function]}
     style={
       Object {
         "left": 300,
@@ -96,6 +115,7 @@ exports[`@mykeels/sticky-notes components/HomeScreen With Notes 1`] = `
     className="absolute bg-gray-100 inline-block p-0"
     draggable={true}
     onDragEnd={[Function]}
+    onDragStart={[Function]}
     style={
       Object {
         "left": 500,
@@ -136,6 +156,7 @@ exports[`@mykeels/sticky-notes components/HomeScreen With Notes 1`] = `
     className="absolute bg-gray-100 inline-block p-0"
     draggable={true}
     onDragEnd={[Function]}
+    onDragStart={[Function]}
     style={
       Object {
         "left": 700,
