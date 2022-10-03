@@ -2,6 +2,8 @@
   min-width: 1024px;
   min-height: 768px;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  height: 100vh;
 }
 
 .sticky-region:empty::before {
