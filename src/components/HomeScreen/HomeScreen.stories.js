@@ -1,3 +1,4 @@
+import { DateTime } from "luxon";
 import React, { useState } from "react";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { DeleteContextProvider } from "../../common/contexts/delete.context";
@@ -28,29 +29,29 @@ export const WithNotes = () => {
       id: "1",
       text: "Hello",
       position: { top: 100, left: 100 },
-      size: { width: 160, height: 160 },
-      color: "blue"
+      color: "blue",
+      date: DateTime.now().minus({ minutes: 1 })
     },
     {
       id: "2",
       text: "World",
-      position: { top: 100, left: 300 },
-      size: { width: 160, height: 160 },
-      color: "yellow"
+      position: { top: 100, left: 352 },
+      color: "yellow",
+      date: DateTime.now().minus({ minutes: 5 })
     },
     {
       id: "3",
       text: "Yes!",
-      position: { top: 100, left: 500 },
-      size: { width: 160, height: 160 },
-      color: "lime"
+      position: { top: 100, left: 604 },
+      color: "lime",
+      date: DateTime.now().minus({ minutes: 75 })
     },
     {
       id: "4",
       text: "No!",
-      position: { top: 100, left: 700 },
-      size: { width: 160, height: 160 },
-      color: "green"
+      position: { top: 100, left: 856 },
+      color: "green",
+      date: DateTime.now().minus({ minutes: 120 })
     }
   ]);
   return (

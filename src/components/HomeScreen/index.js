@@ -128,6 +128,7 @@ export const HomeScreen = ({ getNotes, saveNotes }) => {
             <StickyHeader
               color={note.color}
               zIndex={note.zIndex}
+              date={note.date}
               onColorChange={(color) =>
                 editNote({
                   ...note,

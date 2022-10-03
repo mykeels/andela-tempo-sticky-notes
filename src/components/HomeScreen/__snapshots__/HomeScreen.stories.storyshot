@@ -45,18 +45,31 @@ Array [
       }
     >
       <div
-        className="bg-blue  px-2 py-2 text-right block w-full relative overflow-visible sticky-header"
+        className="bg-blue  px-2 py-2 block w-full relative overflow-visible sticky-header"
       >
-        <button
-          className="text-2xl text-gray-200 inline-block focus:outline px-4 relative sticky-header-button"
-          onClick={[Function]}
+        <div
+          className="inline-block w-1/2 text-xs"
         >
           <span
-            className="relative bottom-2"
+            className="relative bottom-1"
           >
-            ...
+            1 minute ago
           </span>
-        </button>
+        </div>
+        <div
+          className="inline-block w-1/2 text-right"
+        >
+          <button
+            className="text-2xl text-gray-200 inline-block focus:outline px-4 relative sticky-header-button"
+            onClick={[Function]}
+          >
+            <span
+              className="relative bottom-2"
+            >
+              ...
+            </span>
+          </button>
+        </div>
       </div>
       <textarea
         className="bg-gray-100 text-white text-lg p-4"
@@ -67,7 +80,7 @@ Array [
           Object {
             "height": 128,
             "resize": "both",
-            "width": 160,
+            "width": 192,
           }
         }
       />
@@ -79,25 +92,38 @@ Array [
       onDragStart={[Function]}
       style={
         Object {
-          "left": 300,
+          "left": 352,
           "top": 100,
           "zIndex": undefined,
         }
       }
     >
       <div
-        className="bg-yellow  px-2 py-2 text-right block w-full relative overflow-visible sticky-header"
+        className="bg-yellow  px-2 py-2 block w-full relative overflow-visible sticky-header"
       >
-        <button
-          className="text-2xl text-gray-200 inline-block focus:outline px-4 relative sticky-header-button"
-          onClick={[Function]}
+        <div
+          className="inline-block w-1/2 text-xs"
         >
           <span
-            className="relative bottom-2"
+            className="relative bottom-1"
           >
-            ...
+            5 minutes ago
           </span>
-        </button>
+        </div>
+        <div
+          className="inline-block w-1/2 text-right"
+        >
+          <button
+            className="text-2xl text-gray-200 inline-block focus:outline px-4 relative sticky-header-button"
+            onClick={[Function]}
+          >
+            <span
+              className="relative bottom-2"
+            >
+              ...
+            </span>
+          </button>
+        </div>
       </div>
       <textarea
         className="bg-gray-100 text-white text-lg p-4"
@@ -108,7 +134,7 @@ Array [
           Object {
             "height": 128,
             "resize": "both",
-            "width": 160,
+            "width": 192,
           }
         }
       />
@@ -120,25 +146,38 @@ Array [
       onDragStart={[Function]}
       style={
         Object {
-          "left": 500,
+          "left": 604,
           "top": 100,
           "zIndex": undefined,
         }
       }
     >
       <div
-        className="bg-lime  px-2 py-2 text-right block w-full relative overflow-visible sticky-header"
+        className="bg-lime  px-2 py-2 block w-full relative overflow-visible sticky-header"
       >
-        <button
-          className="text-2xl text-gray-200 inline-block focus:outline px-4 relative sticky-header-button"
-          onClick={[Function]}
+        <div
+          className="inline-block w-1/2 text-xs"
         >
           <span
-            className="relative bottom-2"
+            className="relative bottom-1"
           >
-            ...
+            1 hour ago
           </span>
-        </button>
+        </div>
+        <div
+          className="inline-block w-1/2 text-right"
+        >
+          <button
+            className="text-2xl text-gray-200 inline-block focus:outline px-4 relative sticky-header-button"
+            onClick={[Function]}
+          >
+            <span
+              className="relative bottom-2"
+            >
+              ...
+            </span>
+          </button>
+        </div>
       </div>
       <textarea
         className="bg-gray-100 text-white text-lg p-4"
@@ -149,7 +188,7 @@ Array [
           Object {
             "height": 128,
             "resize": "both",
-            "width": 160,
+            "width": 192,
           }
         }
       />
@@ -161,25 +200,38 @@ Array [
       onDragStart={[Function]}
       style={
         Object {
-          "left": 700,
+          "left": 856,
           "top": 100,
           "zIndex": undefined,
         }
       }
     >
       <div
-        className="bg-green  px-2 py-2 text-right block w-full relative overflow-visible sticky-header"
+        className="bg-green  px-2 py-2 block w-full relative overflow-visible sticky-header"
       >
-        <button
-          className="text-2xl text-gray-200 inline-block focus:outline px-4 relative sticky-header-button"
-          onClick={[Function]}
+        <div
+          className="inline-block w-1/2 text-xs"
         >
           <span
-            className="relative bottom-2"
+            className="relative bottom-1"
           >
-            ...
+            2 hours ago
           </span>
-        </button>
+        </div>
+        <div
+          className="inline-block w-1/2 text-right"
+        >
+          <button
+            className="text-2xl text-gray-200 inline-block focus:outline px-4 relative sticky-header-button"
+            onClick={[Function]}
+          >
+            <span
+              className="relative bottom-2"
+            >
+              ...
+            </span>
+          </button>
+        </div>
       </div>
       <textarea
         className="bg-gray-100 text-white text-lg p-4"
@@ -190,7 +242,7 @@ Array [
           Object {
             "height": 128,
             "resize": "both",
-            "width": 160,
+            "width": 192,
           }
         }
       />

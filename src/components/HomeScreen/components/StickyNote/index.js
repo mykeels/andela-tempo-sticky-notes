@@ -4,7 +4,7 @@ import classNames from "classnames";
 import { StickyHeader } from "./components";
 
 const HEIGHT_OFFSET = 32;
-const DEFAULT_WIDTH = 160;
+const DEFAULT_WIDTH = 192;
 const DEFAULT_HEIGHT = 160;
 
 /**
@@ -73,8 +73,8 @@ export const StickyNote = ({
 StickyNote.defaultProps = {
   note: {
     text: "",
-    width: 160,
-    height: 160,
+    width: DEFAULT_WIDTH,
+    height: DEFAULT_HEIGHT,
     zIndex: 1,
     position: { top: 0, left: 0 }
   },
