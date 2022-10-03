@@ -1,7 +1,7 @@
-name: CI App Lint
+name: Lint
 
 on:
-  pull_request:
+  push:
     branches: [ '*' ]
 
 jobs:

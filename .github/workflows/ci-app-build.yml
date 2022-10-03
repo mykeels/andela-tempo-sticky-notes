@@ -1,7 +1,7 @@
-name: CI App Build
+name: Build App
 
 on:
-  pull_request:
+  push:
     branches: [ '*' ]
 
 jobs:
