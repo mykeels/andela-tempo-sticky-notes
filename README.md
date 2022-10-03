@@ -10,15 +10,15 @@ See [Project Description Document](./docs/Front-end%20developer%20Assessment.pdf
 
 From the above document, we can extract the following requirements.
 
-- [ ] 1. Create a new note of the specified size at the specified position.
-- [ ] 2. Change note size by dragging.
-- [ ] 3. Move a note by dragging.
-- [ ] 4. Remove a note by dragging it over a predefined "trash" zone.
-- [ ] 5. Entering/Editing note text.
-- [ ] 6. Moving notes to front
-- [ ] 7. Saving notes to local storage
-- [ ] 8. Different note colors
-- [ ] 9. Saving notes via async API
+- [x] 1. Create a new note of the specified size at the specified position.
+- [x] 2. Change note size by dragging.
+- [x] 3. Move a note by dragging.
+- [x] 4. Remove a note by dragging it over a predefined "trash" zone.
+- [x] 5. Entering/Editing note text.
+- [x] 6. Moving notes to front
+- [x] 7. Saving notes to local storage
+- [x] 8. Different note colors
+- [x] 9. Saving notes via async API
 
 Using the above Requirements, we can come up with a [Formal User Requirement Specification](./specs/) using Gherkin syntax.
 
