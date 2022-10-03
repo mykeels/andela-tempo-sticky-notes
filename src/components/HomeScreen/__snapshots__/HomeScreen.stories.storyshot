@@ -1,197 +1,200 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`@mykeels/sticky-notes components/HomeScreen Empty 1`] = `
-<div
-  className="relative bg-gray-200 block sticky-region cursor-pointer"
-  onDoubleClick={[Function]}
->
+Array [
   <div
-    className="delete-region h-16 bg-red block w-full opacity-0 text-center text-2xl py-4 text-white"
+    className="delete-region h-16 bg-red block w-full text-center text-2xl py-4 text-white fixed top-0 left-0 z-10 opacity-0"
     onDragLeave={[Function]}
     onDragOver={[Function]}
     onDrop={[Function]}
   >
     Drop Note to Delete
-  </div>
-</div>
+  </div>,
+  <div
+    className="relative bg-gray-200 block sticky-region cursor-pointer"
+    onDoubleClick={[Function]}
+  />,
+]
 `;
 
 exports[`@mykeels/sticky-notes components/HomeScreen With Notes 1`] = `
-<div
-  className="relative bg-gray-200 block sticky-region cursor-pointer"
-  onDoubleClick={[Function]}
->
+Array [
   <div
-    className="delete-region h-16 bg-red block w-full opacity-0 text-center text-2xl py-4 text-white"
+    className="delete-region h-16 bg-red block w-full text-center text-2xl py-4 text-white fixed top-0 left-0 z-10 opacity-0"
     onDragLeave={[Function]}
     onDragOver={[Function]}
     onDrop={[Function]}
   >
     Drop Note to Delete
-  </div>
+  </div>,
   <div
-    className="absolute bg-gray-100 inline-block p-0"
-    draggable={true}
-    onDragEnd={[Function]}
-    onDragStart={[Function]}
-    style={
-      Object {
-        "left": 100,
-        "top": 100,
-        "zIndex": 1,
-      }
-    }
+    className="relative bg-gray-200 block sticky-region cursor-pointer"
+    onDoubleClick={[Function]}
   >
     <div
-      className="bg-blue  px-2 py-2 text-right block w-full relative overflow-visible sticky-header"
-    >
-      <button
-        className="text-2xl text-gray-200 inline-block focus:outline px-4 relative sticky-header-button"
-        onClick={[Function]}
-      >
-        <span
-          className="relative bottom-2"
-        >
-          ...
-        </span>
-      </button>
-    </div>
-    <textarea
-      className="bg-gray-100 text-white text-lg p-4"
-      defaultValue="Hello"
-      onBlur={[Function]}
-      onMouseUp={[Function]}
+      className="absolute bg-gray-100 inline-block p-0"
+      draggable={true}
+      onDragEnd={[Function]}
+      onDragStart={[Function]}
       style={
         Object {
-          "height": 128,
-          "resize": "both",
-          "width": 160,
+          "left": 100,
+          "top": 100,
+          "zIndex": undefined,
         }
       }
-    />
-  </div>
-  <div
-    className="absolute bg-gray-100 inline-block p-0"
-    draggable={true}
-    onDragEnd={[Function]}
-    onDragStart={[Function]}
-    style={
-      Object {
-        "left": 300,
-        "top": 100,
-        "zIndex": 1,
-      }
-    }
-  >
+    >
+      <div
+        className="bg-blue  px-2 py-2 text-right block w-full relative overflow-visible sticky-header"
+      >
+        <button
+          className="text-2xl text-gray-200 inline-block focus:outline px-4 relative sticky-header-button"
+          onClick={[Function]}
+        >
+          <span
+            className="relative bottom-2"
+          >
+            ...
+          </span>
+        </button>
+      </div>
+      <textarea
+        className="bg-gray-100 text-white text-lg p-4"
+        defaultValue="Hello"
+        onBlur={[Function]}
+        onMouseUp={[Function]}
+        style={
+          Object {
+            "height": 128,
+            "resize": "both",
+            "width": 160,
+          }
+        }
+      />
+    </div>
     <div
-      className="bg-yellow  px-2 py-2 text-right block w-full relative overflow-visible sticky-header"
-    >
-      <button
-        className="text-2xl text-gray-200 inline-block focus:outline px-4 relative sticky-header-button"
-        onClick={[Function]}
-      >
-        <span
-          className="relative bottom-2"
-        >
-          ...
-        </span>
-      </button>
-    </div>
-    <textarea
-      className="bg-gray-100 text-white text-lg p-4"
-      defaultValue="World"
-      onBlur={[Function]}
-      onMouseUp={[Function]}
+      className="absolute bg-gray-100 inline-block p-0"
+      draggable={true}
+      onDragEnd={[Function]}
+      onDragStart={[Function]}
       style={
         Object {
-          "height": 128,
-          "resize": "both",
-          "width": 160,
+          "left": 300,
+          "top": 100,
+          "zIndex": undefined,
         }
       }
-    />
-  </div>
-  <div
-    className="absolute bg-gray-100 inline-block p-0"
-    draggable={true}
-    onDragEnd={[Function]}
-    onDragStart={[Function]}
-    style={
-      Object {
-        "left": 500,
-        "top": 100,
-        "zIndex": 1,
-      }
-    }
-  >
+    >
+      <div
+        className="bg-yellow  px-2 py-2 text-right block w-full relative overflow-visible sticky-header"
+      >
+        <button
+          className="text-2xl text-gray-200 inline-block focus:outline px-4 relative sticky-header-button"
+          onClick={[Function]}
+        >
+          <span
+            className="relative bottom-2"
+          >
+            ...
+          </span>
+        </button>
+      </div>
+      <textarea
+        className="bg-gray-100 text-white text-lg p-4"
+        defaultValue="World"
+        onBlur={[Function]}
+        onMouseUp={[Function]}
+        style={
+          Object {
+            "height": 128,
+            "resize": "both",
+            "width": 160,
+          }
+        }
+      />
+    </div>
     <div
-      className="bg-lime  px-2 py-2 text-right block w-full relative overflow-visible sticky-header"
-    >
-      <button
-        className="text-2xl text-gray-200 inline-block focus:outline px-4 relative sticky-header-button"
-        onClick={[Function]}
-      >
-        <span
-          className="relative bottom-2"
-        >
-          ...
-        </span>
-      </button>
-    </div>
-    <textarea
-      className="bg-gray-100 text-white text-lg p-4"
-      defaultValue="Yes!"
-      onBlur={[Function]}
-      onMouseUp={[Function]}
+      className="absolute bg-gray-100 inline-block p-0"
+      draggable={true}
+      onDragEnd={[Function]}
+      onDragStart={[Function]}
       style={
         Object {
-          "height": 128,
-          "resize": "both",
-          "width": 160,
+          "left": 500,
+          "top": 100,
+          "zIndex": undefined,
         }
       }
-    />
-  </div>
-  <div
-    className="absolute bg-gray-100 inline-block p-0"
-    draggable={true}
-    onDragEnd={[Function]}
-    onDragStart={[Function]}
-    style={
-      Object {
-        "left": 700,
-        "top": 100,
-        "zIndex": 1,
-      }
-    }
-  >
+    >
+      <div
+        className="bg-lime  px-2 py-2 text-right block w-full relative overflow-visible sticky-header"
+      >
+        <button
+          className="text-2xl text-gray-200 inline-block focus:outline px-4 relative sticky-header-button"
+          onClick={[Function]}
+        >
+          <span
+            className="relative bottom-2"
+          >
+            ...
+          </span>
+        </button>
+      </div>
+      <textarea
+        className="bg-gray-100 text-white text-lg p-4"
+        defaultValue="Yes!"
+        onBlur={[Function]}
+        onMouseUp={[Function]}
+        style={
+          Object {
+            "height": 128,
+            "resize": "both",
+            "width": 160,
+          }
+        }
+      />
+    </div>
     <div
-      className="bg-green  px-2 py-2 text-right block w-full relative overflow-visible sticky-header"
-    >
-      <button
-        className="text-2xl text-gray-200 inline-block focus:outline px-4 relative sticky-header-button"
-        onClick={[Function]}
-      >
-        <span
-          className="relative bottom-2"
-        >
-          ...
-        </span>
-      </button>
-    </div>
-    <textarea
-      className="bg-gray-100 text-white text-lg p-4"
-      defaultValue="No!"
-      onBlur={[Function]}
-      onMouseUp={[Function]}
+      className="absolute bg-gray-100 inline-block p-0"
+      draggable={true}
+      onDragEnd={[Function]}
+      onDragStart={[Function]}
       style={
         Object {
-          "height": 128,
-          "resize": "both",
-          "width": 160,
+          "left": 700,
+          "top": 100,
+          "zIndex": undefined,
         }
       }
-    />
-  </div>
-</div>
+    >
+      <div
+        className="bg-green  px-2 py-2 text-right block w-full relative overflow-visible sticky-header"
+      >
+        <button
+          className="text-2xl text-gray-200 inline-block focus:outline px-4 relative sticky-header-button"
+          onClick={[Function]}
+        >
+          <span
+            className="relative bottom-2"
+          >
+            ...
+          </span>
+        </button>
+      </div>
+      <textarea
+        className="bg-gray-100 text-white text-lg p-4"
+        defaultValue="No!"
+        onBlur={[Function]}
+        onMouseUp={[Function]}
+        style={
+          Object {
+            "height": 128,
+            "resize": "both",
+            "width": 160,
+          }
+        }
+      />
+    </div>
+  </div>,
+]
 `;

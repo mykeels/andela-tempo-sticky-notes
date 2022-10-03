@@ -36,8 +36,12 @@ export const CustomSize = () => (
   <StickyNote
     onResize={console.log}
     onChange={console.log}
-    width={320}
-    height={320}
+    note={{
+      size: {
+        width: 320,
+        height: 320
+      }
+    }}
     Header={() => <Header />}
   />
 );

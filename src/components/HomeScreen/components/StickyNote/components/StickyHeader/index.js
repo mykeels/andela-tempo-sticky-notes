@@ -4,9 +4,9 @@ import React, { useEffect, useRef, useState } from "react";
 /**
  * @param {object} props
  * @param {boolean} [props.isExpanded]
- * @param {"blue" | "lime" | "yellow" | "green"} props.color
+ * @param {NoteColor} props.color
  * @param {number} props.zIndex
- * @param {(color: "blue" | "lime" | "yellow" | "green") => any} props.onColorChange
+ * @param {(color: NoteColor) => any} props.onColorChange
  * @param {(color: number) => any} props.onZIndexChange
  * @returns {JSX.Element}
  */

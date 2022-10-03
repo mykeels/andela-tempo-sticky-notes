@@ -18,24 +18,12 @@ export const StickyRegion = ({
   ...props
 }) => {
   const [dragOver, setDragOver] = useState(false);
-  const { callback } = useContext(DeleteContext)
+  const { callback } = useContext(DeleteContext);
   return (
-    <div
-      {...props}
-      className={classNames(
-        className,
-        "bg-gray-200 block sticky-region cursor-pointer"
-      )}
-      onDoubleClick={(e) => {
-        onDoubleClick({
-          x: e.clientX,
-          y: e.clientY
-        });
-      }}
-    >
+    <>
       <div
         className={classNames(
-          "delete-region h-16 bg-red block w-full opacity-0 text-center text-2xl py-4 text-white",
+          "delete-region h-16 bg-red block w-full text-center text-2xl py-4 text-white fixed top-0 left-0 z-10 opacity-0",
           {
             "opacity-50": dragOver
           }
@@ -53,8 +41,24 @@ export const StickyRegion = ({
           }
           setDragOver(false);
         }}
-      >Drop Note to Delete</div>
-      {children}
-    </div>
+      >
+        Drop Note to Delete
+      </div>
+      <div
+        {...props}
+        className={classNames(
+          className,
+          "bg-gray-200 block sticky-region cursor-pointer"
+        )}
+        onDoubleClick={(e) => {
+          onDoubleClick({
+            x: e.clientX,
+            y: e.clientY
+          });
+        }}
+      >
+        {children}
+      </div>
+    </>
   );
 };

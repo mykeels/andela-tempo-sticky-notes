@@ -1,36 +1,39 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`@mykeels/sticky-notes components/StickyRegion Empty 1`] = `
-<div
-  className="bg-gray-200 block sticky-region cursor-pointer"
-  onDoubleClick={[Function]}
->
+Array [
   <div
-    className="delete-region h-16 bg-red block w-full opacity-0 text-center text-2xl py-4 text-white"
+    className="delete-region h-16 bg-red block w-full text-center text-2xl py-4 text-white fixed top-0 left-0 z-10 opacity-0"
     onDragLeave={[Function]}
     onDragOver={[Function]}
     onDrop={[Function]}
   >
     Drop Note to Delete
-  </div>
-</div>
+  </div>,
+  <div
+    className="bg-gray-200 block sticky-region cursor-pointer"
+    onDoubleClick={[Function]}
+  />,
+]
 `;
 
 exports[`@mykeels/sticky-notes components/StickyRegion With Content 1`] = `
-<div
-  className="bg-gray-200 block sticky-region cursor-pointer"
-  onDoubleClick={[Function]}
->
+Array [
   <div
-    className="delete-region h-16 bg-red block w-full opacity-0 text-center text-2xl py-4 text-white"
+    className="delete-region h-16 bg-red block w-full text-center text-2xl py-4 text-white fixed top-0 left-0 z-10 opacity-0"
     onDragLeave={[Function]}
     onDragOver={[Function]}
     onDrop={[Function]}
   >
     Drop Note to Delete
-  </div>
-  <div>
-    Hello World
-  </div>
-</div>
+  </div>,
+  <div
+    className="bg-gray-200 block sticky-region cursor-pointer"
+    onDoubleClick={[Function]}
+  >
+    <div>
+      Hello World
+    </div>
+  </div>,
+]
 `;

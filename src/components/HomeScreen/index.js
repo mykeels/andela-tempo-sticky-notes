@@ -77,7 +77,8 @@ export const HomeScreen = ({ getNotes, saveNotes }) => {
       <>
         {preview ? (
           <StickyNote
-            position={preview?.position}
+            // @ts-ignore
+            note={preview}
             onChange={(text) => addNote(text)}
             Header={() => (
               <StickyHeader
@@ -122,11 +123,7 @@ export const HomeScreen = ({ getNotes, saveNotes }) => {
         <StickyNote
           key={note.id}
           className="absolute"
-          text={note.text}
-          width={note.size.width}
-          height={note.size.height}
-          position={note.position}
-          zIndex={note.zIndex}
+          note={note}
           Header={() => (
             <StickyHeader
               color={note.color}
