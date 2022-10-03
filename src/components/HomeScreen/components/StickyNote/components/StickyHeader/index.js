@@ -10,6 +10,7 @@ import React, { useEffect, useRef, useState } from "react";
  * @param {number} props.zIndex
  * @param {(color: NoteColor) => any} props.onColorChange
  * @param {(color: number) => any} props.onZIndexChange
+ * @param {{ focused: boolean }} [props.defaults]
  * @returns {JSX.Element}
  */
 export const StickyHeader = ({
@@ -18,10 +19,11 @@ export const StickyHeader = ({
   zIndex,
   date,
   onColorChange,
-  onZIndexChange
+  onZIndexChange,
+  defaults
 }) => {
   const controlRef = useRef();
-  const [focused, setFocused] = useState(false);
+  const [focused, setFocused] = useState(defaults?.focused);
   useEffect(() => {
     const onWindowClick = (e) => {
       if (
@@ -137,5 +139,8 @@ export const StickyHeader = ({
 
 StickyHeader.defaultProps = {
   color: "blue",
-  zIndex: 1
+  zIndex: 1,
+  defaults: {
+    focused: false
+  }
 };

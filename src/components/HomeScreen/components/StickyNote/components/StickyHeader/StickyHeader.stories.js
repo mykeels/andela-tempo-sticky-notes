@@ -89,3 +89,15 @@ export const ExpandedYellow = () => (
     isExpanded
   />
 );
+
+export const WithOpenControls = () => (
+  <StickyHeader
+    color="yellow"
+    onColorChange={console.log}
+    onZIndexChange={console.log}
+    defaults={{
+      focused: true
+    }}
+    isExpanded
+  />
+);
