@@ -22,3 +22,20 @@ From the above document, we can extract the following requirements.
 
 Using the above Requirements, we can come up with a [Formal User Requirement Specification](./specs/) using Gherkin syntax.
 
+## 3. Design and Prototyping
+
+See [Figma](https://www.figma.com/file/Gu3kf4IjUVi306ZvLoSfCT/Sticky-Notes?node-id=1%3A59).
+
+## 4. Software Development
+
+To setup, run `npm install`.
+
+To view Storybook, run `npm run storybook`.
+
+To start the app, run `npm start`.
+
+## 5. Testing
+
+Frontend tests use snapshot testing via Jest and Storybook.
+
+
