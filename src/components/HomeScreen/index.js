@@ -8,22 +8,6 @@ import { StickyRegion } from "./components/StickyRegion";
 const DEFAULT_NOTE_WIDTH = 160;
 const DEFAULT_NOTE_HEIGHT = 160;
 
-const Header = (props) => {
-  const [color, setColor] = useState(props.color || "blue");
-  const [zIndex, setZIndex] = useState(1);
-
-  return (
-    <StickyHeader
-      {...props}
-      color={color}
-      zIndex={zIndex}
-      onColorChange={setColor}
-      onZIndexChange={setZIndex}
-      isExpanded
-    />
-  );
-};
-
 export const HomeScreen = () => {
   /** @type {[Partial<Note>, React.Dispatch<React.SetStateAction<Partial<Note>>>]} */
   const [preview, setPreview] = useState(null);
@@ -44,6 +28,10 @@ export const HomeScreen = () => {
       }
     ]);
     setPreview(null);
+  };
+  /** @param {Partial<Note>} note */
+  const editNote = (note) => {
+    setNotes(notes.map((n) => (n.id === note.id ? { ...n, ...note } : n)));
   };
   return (
     <StickyRegion
@@ -107,14 +95,47 @@ export const HomeScreen = () => {
         <StickyNote
           key={note.id}
           className="absolute"
-          Header={() => <Header />}
           text={note.text}
           width={note.size.width}
           height={note.size.height}
           position={note.position}
-          onPositionChange={() => {}}
-          onResize={() => {}}
-          onChange={() => {}}
+          Header={() => (
+            <StickyHeader
+              color={note.color}
+              zIndex={note.zIndex}
+              onColorChange={(color) =>
+                editNote({
+                  ...note,
+                  color
+                })
+              }
+              onZIndexChange={(zIndex) =>
+                editNote({
+                  ...note,
+                  zIndex
+                })
+              }
+              isExpanded
+            />
+          )}
+          onPositionChange={(position) =>
+            editNote({
+              ...note,
+              position
+            })
+          }
+          onResize={(size) =>
+            editNote({
+              ...note,
+              size
+            })
+          }
+          onChange={(text) =>
+            editNote({
+              ...note,
+              text
+            })
+          }
         ></StickyNote>
       ))}
     </StickyRegion>
