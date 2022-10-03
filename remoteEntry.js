@@ -115,7 +115,7 @@ __webpack_require__.d(exports, {
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "static/js/" + chunkId + "." + {"vendors-node_modules_react-dom_index_js":"407830fb","webpack_sharing_consume_default_react_react":"c9815e99","vendors-node_modules_react-query_es_index_js":"6d3f8b9c","webpack_sharing_consume_default_react-dom_react-dom":"177a154f","node_modules_babel_runtime_helpers_esm_setPrototypeOf_js":"47af5640","node_modules_react_index_js":"edf905ba","vendors-node_modules_classnames_dedupe_js-node_modules_classnames_index_js-node_modules_luxon-baf9a8":"90227ac2","src_bootstrap_js":"b4cc7007","node_modules_web-vitals_dist_web-vitals_js":"effb2adf"}[chunkId] + ".chunk.js";
+/******/ 			return "static/js/" + chunkId + "." + {"vendors-node_modules_react-dom_index_js":"407830fb","webpack_sharing_consume_default_react_react":"c9815e99","vendors-node_modules_react-query_es_index_js":"6d3f8b9c","webpack_sharing_consume_default_react-dom_react-dom":"177a154f","node_modules_babel_runtime_helpers_esm_setPrototypeOf_js":"47af5640","node_modules_react_index_js":"edf905ba","vendors-node_modules_classnames_dedupe_js-node_modules_classnames_index_js-node_modules_luxon-baf9a8":"90227ac2","src_bootstrap_js":"4ff00675","node_modules_web-vitals_dist_web-vitals_js":"effb2adf"}[chunkId] + ".chunk.js";
 /******/ 		};
 /******/ 	})();
 /******/ 	
