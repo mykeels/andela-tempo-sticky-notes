@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.js": "/static/js/main.92eb64a8.js",
+    "StickyNotes.js": "/remoteEntry.js",
+    "static/css/src_bootstrap_js.1e11e338.chunk.css": "/static/css/src_bootstrap_js.1e11e338.chunk.css",
+    "static/js/src_bootstrap_js.b4cc7007.chunk.js": "/static/js/src_bootstrap_js.b4cc7007.chunk.js",
+    "static/js/node_modules_babel_runtime_helpers_esm_setPrototypeOf_js.47af5640.chunk.js": "/static/js/node_modules_babel_runtime_helpers_esm_setPrototypeOf_js.47af5640.chunk.js",
+    "static/js/node_modules_react_index_js.edf905ba.chunk.js": "/static/js/node_modules_react_index_js.edf905ba.chunk.js",
+    "static/js/vendors-node_modules_react-dom_index_js.407830fb.chunk.js": "/static/js/vendors-node_modules_react-dom_index_js.407830fb.chunk.js",
+    "static/js/vendors-node_modules_react-query_es_index_js.6d3f8b9c.chunk.js": "/static/js/vendors-node_modules_react-query_es_index_js.6d3f8b9c.chunk.js",
+    "static/js/node_modules_web-vitals_dist_web-vitals_js.effb2adf.chunk.js": "/static/js/node_modules_web-vitals_dist_web-vitals_js.effb2adf.chunk.js",
+    "static/js/vendors-node_modules_classnames_dedupe_js-node_modules_classnames_index_js-node_modules_luxon-baf9a8.90227ac2.chunk.js": "/static/js/vendors-node_modules_classnames_dedupe_js-node_modules_classnames_index_js-node_modules_luxon-baf9a8.90227ac2.chunk.js",
+    "index.html": "/index.html",
+    "main.92eb64a8.js.map": "/static/js/main.92eb64a8.js.map",
+    "remoteEntry.js.map": "/remoteEntry.js.map",
+    "src_bootstrap_js.1e11e338.chunk.css.map": "/static/css/src_bootstrap_js.1e11e338.chunk.css.map",
+    "src_bootstrap_js.b4cc7007.chunk.js.map": "/static/js/src_bootstrap_js.b4cc7007.chunk.js.map",
+    "node_modules_babel_runtime_helpers_esm_setPrototypeOf_js.47af5640.chunk.js.map": "/static/js/node_modules_babel_runtime_helpers_esm_setPrototypeOf_js.47af5640.chunk.js.map",
+    "node_modules_react_index_js.edf905ba.chunk.js.map": "/static/js/node_modules_react_index_js.edf905ba.chunk.js.map",
+    "vendors-node_modules_react-dom_index_js.407830fb.chunk.js.map": "/static/js/vendors-node_modules_react-dom_index_js.407830fb.chunk.js.map",
+    "vendors-node_modules_react-query_es_index_js.6d3f8b9c.chunk.js.map": "/static/js/vendors-node_modules_react-query_es_index_js.6d3f8b9c.chunk.js.map",
+    "node_modules_web-vitals_dist_web-vitals_js.effb2adf.chunk.js.map": "/static/js/node_modules_web-vitals_dist_web-vitals_js.effb2adf.chunk.js.map",
+    "vendors-node_modules_classnames_dedupe_js-node_modules_classnames_index_js-node_modules_luxon-baf9a8.90227ac2.chunk.js.map": "/static/js/vendors-node_modules_classnames_dedupe_js-node_modules_classnames_index_js-node_modules_luxon-baf9a8.90227ac2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.92eb64a8.js"
+  ]
+}
