@@ -5,7 +5,6 @@ import { QueryClient, QueryClientProvider } from "react-query";
 import { BrowserRouter, HashRouter, Routes, Route } from "react-router-dom";
 
 import { HomeScreen } from "./components";
-import { setFetchFunction } from "./common/utils";
 import { useBaseHref } from "./hooks";
 
 /**
