@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import classNames from "classnames";
 
 import { StickyHeader } from "./components";
@@ -33,6 +33,11 @@ export const StickyNote = ({
   }, [pos]);
   const $width = note.size?.width || DEFAULT_NOTE_WIDTH;
   const $height = note.size?.height || DEFAULT_NOTE_HEIGHT;
+  /** @type {React.MutableRefObject<HTMLTextAreaElement>} */
+  const textareaRef = useRef();
+  useEffect(() => {
+    textareaRef.current?.focus();
+  }, []);
   return (
     <div
       {...props}
@@ -48,6 +53,7 @@ export const StickyNote = ({
     >
       <Header />
       <textarea
+        ref={textareaRef}
         className="bg-gray-100 text-white text-lg p-4"
         style={{
           resize: "both",
