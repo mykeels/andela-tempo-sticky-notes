@@ -26,11 +26,7 @@ module.exports = {
     }
   },
   plugins: ["react", "simple-import-sort", "jest"],
-  extends: [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:prettier/recommended"
-  ],
+  extends: ["eslint:recommended", "plugin:react/recommended"],
   globals: {
     it: true,
     describe: true,
@@ -54,7 +50,16 @@ module.exports = {
       }
     }
   ],
-  ignorePatterns: ["node_modules/"],
+  ignorePatterns: [
+    "node_modules/",
+    "dist/",
+    "build/",
+    "scripts/",
+    "typings/",
+    "storybook-static/",
+    ".eslintrc.js",
+    "/*.js"
+  ],
   settings: {
     react: {
       version: "detect"
