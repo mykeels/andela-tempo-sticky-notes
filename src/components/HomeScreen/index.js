@@ -1,15 +1,16 @@
 import React, { useContext, useState } from "react";
 import { useQuery } from "react-query";
 import { v4 as uuid } from "uuid";
+
 import { DeleteContext } from "../../common/contexts/delete.context";
 import { useCacheInvalidation } from "../../hooks";
-
-import { StickyNote } from "./components/StickyNote";
+import {
+  DEFAULT_NOTE_HEIGHT,
+  DEFAULT_NOTE_WIDTH,
+  StickyNote
+} from "./components/StickyNote";
 import { StickyHeader } from "./components/StickyNote/components";
 import { StickyRegion } from "./components/StickyRegion";
-
-const DEFAULT_NOTE_WIDTH = 160;
-const DEFAULT_NOTE_HEIGHT = 160;
 
 /**
  *

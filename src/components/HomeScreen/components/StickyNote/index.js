@@ -4,8 +4,8 @@ import classNames from "classnames";
 import { StickyHeader } from "./components";
 
 const HEIGHT_OFFSET = 32;
-const DEFAULT_WIDTH = 192;
-const DEFAULT_HEIGHT = 160;
+export const DEFAULT_NOTE_WIDTH = 192;
+export const DEFAULT_NOTE_HEIGHT = 160;
 
 /**
  *
@@ -31,8 +31,8 @@ export const StickyNote = ({
   useEffect(() => {
     onPositionChange(pos);
   }, [pos]);
-  const $width = note.size?.width || DEFAULT_WIDTH;
-  const $height = note.size?.height || DEFAULT_HEIGHT;
+  const $width = note.size?.width || DEFAULT_NOTE_WIDTH;
+  const $height = note.size?.height || DEFAULT_NOTE_HEIGHT;
   return (
     <div
       {...props}
@@ -73,8 +73,8 @@ export const StickyNote = ({
 StickyNote.defaultProps = {
   note: {
     text: "",
-    width: DEFAULT_WIDTH,
-    height: DEFAULT_HEIGHT,
+    width: DEFAULT_NOTE_WIDTH,
+    height: DEFAULT_NOTE_HEIGHT,
     zIndex: 1,
     position: { top: 0, left: 0 }
   },
