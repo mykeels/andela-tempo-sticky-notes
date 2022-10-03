@@ -38,4 +38,9 @@ To start the app, run `npm start`.
 
 Frontend tests use snapshot testing via Jest and Storybook.
 
+## Preview
+
+![Preview Image](https://user-images.githubusercontent.com/11996508/193679530-35abf198-5fbf-43de-8148-337ee0c8c5d4.png)
+
+
 
