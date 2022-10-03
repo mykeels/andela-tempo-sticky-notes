@@ -9,6 +9,7 @@ exports[`@mykeels/sticky-notes components/StickyNote Custom Size 1`] = `
     Object {
       "left": 0,
       "top": 0,
+      "zIndex": 1,
     }
   }
 >
@@ -51,6 +52,7 @@ exports[`@mykeels/sticky-notes components/StickyNote Index 1`] = `
     Object {
       "left": 0,
       "top": 0,
+      "zIndex": 1,
     }
   }
 >

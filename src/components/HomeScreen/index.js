@@ -15,6 +15,9 @@ export const HomeScreen = () => {
   const [notes, setNotes] = useState([]);
   /** @param {string} text */
   const addNote = (text) => {
+    if (!text) {
+      return;
+    }
     setNotes([
       ...notes,
       {
@@ -32,6 +35,7 @@ export const HomeScreen = () => {
   /** @param {Partial<Note>} note */
   const editNote = (note) => {
     setNotes(notes.map((n) => (n.id === note.id ? { ...n, ...note } : n)));
+    console.log(notes);
   };
   return (
     <StickyRegion
@@ -87,6 +91,7 @@ export const HomeScreen = () => {
             className="absolute"
             width={DEFAULT_NOTE_WIDTH}
             height={DEFAULT_NOTE_HEIGHT}
+            zIndex={preview.zIndex}
             key={`preview-${preview?.position?.left}-${preview?.position?.top}`}
           ></StickyNote>
         ) : null}
@@ -99,6 +104,7 @@ export const HomeScreen = () => {
           width={note.size.width}
           height={note.size.height}
           position={note.position}
+          zIndex={note.zIndex}
           Header={() => (
             <StickyHeader
               color={note.color}

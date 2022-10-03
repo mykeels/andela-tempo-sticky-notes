@@ -11,6 +11,7 @@ const HEIGHT_OFFSET = 32;
  * @param {number} [props.width]
  * @param {number} [props.height]
  * @param {{ top: any, left: any }} [props.position]
+ * @param {number} [props.zIndex]
  * @param {string} [props.text]
  * @param {(position: { top: any, left: any }) => any} [props.onPositionChange]
  * @param {any} [props.className]
@@ -25,6 +26,7 @@ export const StickyNote = ({
   text,
   className,
   position,
+  zIndex,
   onPositionChange,
   onResize,
   onChange,
@@ -39,7 +41,7 @@ export const StickyNote = ({
     <div
       {...props}
       className={classNames(className, "bg-gray-100 inline-block p-0")}
-      style={{ top: pos.top, left: pos.left }}
+      style={{ top: pos.top, left: pos.left, zIndex }}
       onDragEnd={(e) => {
         setPos({
           top: e.clientY - HEIGHT_OFFSET,
@@ -76,6 +78,7 @@ StickyNote.defaultProps = {
   text: "",
   width: 160,
   height: 160,
+  zIndex: 1,
   Header: StickyHeader,
   position: { top: 0, left: 0 },
   onPositionChange: () => {}
