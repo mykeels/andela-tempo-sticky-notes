@@ -1,0 +1,32 @@
+name: CI App Test
+
+on:
+  pull_request:
+    branches: [ '*' ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    env:
+      working-directory: ./
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Set Timezone to UTC+1
+      uses: szenius/set-timezone@v1.0
+      with:
+        timezoneLinux: "Africa/Lagos"
+    - run: npm ci
+    - name: Test App
+      run: npm test
+      env:
+        CI: true
