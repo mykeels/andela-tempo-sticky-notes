@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@mykeels/sticky-notes components/StickyNote Index 1`] = `
+<div
+  className="bg-gray-100 inline-block p-0"
+>
+  <div
+    className="bg-blue px-2 py-2 text-right block w-full"
+  >
+    <button
+      className="text-2xl text-gray-200 inline-block focus:outline px-4 relative"
+    >
+      <span
+        className="relative bottom-2"
+      >
+        ...
+      </span>
+    </button>
+  </div>
+  <textarea
+    className="bg-gray-100"
+    onMouseUp={[Function]}
+    style={
+      Object {
+        "height": 70,
+        "resize": "both",
+        "width": 100,
+      }
+    }
+  />
+</div>
+`;

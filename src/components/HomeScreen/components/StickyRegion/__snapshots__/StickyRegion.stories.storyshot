@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@mykeels/sticky-notes components/StickyRegion Empty 1`] = `
+<div
+  className="bg-gray-200 block sticky-region cursor-pointer"
+/>
+`;
+
+exports[`@mykeels/sticky-notes components/StickyRegion With Content 1`] = `
+<div
+  className="bg-gray-200 block sticky-region cursor-pointer"
+>
+  <div>
+    Hello World
+  </div>
+</div>
+`;

@@ -1,7 +1,8 @@
-import React from "react";
 import initStoryshots from "@storybook/addon-storyshots";
 import { Settings } from "luxon";
 import timemachine from "timemachine";
+
+import { sleep } from "./common";
 
 beforeEach(() => {
   window.matchMedia = () => ({
