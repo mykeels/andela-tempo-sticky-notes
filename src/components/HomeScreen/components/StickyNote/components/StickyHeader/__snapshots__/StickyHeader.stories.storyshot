@@ -2,7 +2,7 @@
 
 exports[`@mykeels/sticky-notes components/StickyNote/components/StickyHeader Blue 1`] = `
 <div
-  className="blue  p-2 block w-full"
+  className="bg-blue  p-2 block w-full"
 />
 `;
 
@@ -76,7 +76,7 @@ exports[`@mykeels/sticky-notes components/StickyNote/components/StickyHeader Exp
 
 exports[`@mykeels/sticky-notes components/StickyNote/components/StickyHeader Green 1`] = `
 <div
-  className="green  p-2 block w-full"
+  className="bg-green  p-2 block w-full"
 />
 `;
 
@@ -99,12 +99,12 @@ exports[`@mykeels/sticky-notes components/StickyNote/components/StickyHeader Ind
 
 exports[`@mykeels/sticky-notes components/StickyNote/components/StickyHeader Lime 1`] = `
 <div
-  className="lime  p-2 block w-full"
+  className="bg-lime  p-2 block w-full"
 />
 `;
 
 exports[`@mykeels/sticky-notes components/StickyNote/components/StickyHeader Yellow 1`] = `
 <div
-  className="yellow  p-2 block w-full"
+  className="bg-yellow  p-2 block w-full"
 />
 `;

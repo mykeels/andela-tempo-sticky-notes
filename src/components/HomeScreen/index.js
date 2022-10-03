@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import { useQuery } from "react-query";
 import { v4 as uuid } from "uuid";
+import { useCacheInvalidation } from "../../hooks";
 
 import { StickyNote } from "./components/StickyNote";
 import { StickyHeader } from "./components/StickyNote/components";
@@ -8,17 +10,24 @@ import { StickyRegion } from "./components/StickyRegion";
 const DEFAULT_NOTE_WIDTH = 160;
 const DEFAULT_NOTE_HEIGHT = 160;
 
-export const HomeScreen = () => {
+/**
+ *
+ * @param {object} props
+ * @param {() => Promise<Note[]>} props.getNotes
+ * @param {(notes: Note[]) => Promise<any>} props.saveNotes
+ * @returns {JSX.Element}
+ */
+export const HomeScreen = ({ getNotes, saveNotes }) => {
   /** @type {[Partial<Note>, React.Dispatch<React.SetStateAction<Partial<Note>>>]} */
   const [preview, setPreview] = useState(null);
-  /** @type {[Note[], React.Dispatch<React.SetStateAction<Note[]>>]} */
-  const [notes, setNotes] = useState([]);
+  const { data: notes = [] } = useQuery(["notes"], getNotes);
+  const { updateCache } = useCacheInvalidation(["notes"], 100);
   /** @param {string} text */
   const addNote = (text) => {
     if (!text) {
       return;
     }
-    setNotes([
+    const newNotes = [
       ...notes,
       {
         id: uuid(),
@@ -29,13 +38,19 @@ export const HomeScreen = () => {
         size: preview.size,
         zIndex: 1
       }
-    ]);
+    ];
+    saveNotes(newNotes);
     setPreview(null);
+    updateCache(() => newNotes);
   };
   /** @param {Partial<Note>} note */
   const editNote = (note) => {
-    setNotes(notes.map((n) => (n.id === note.id ? { ...n, ...note } : n)));
-    console.log(notes);
+    const newNotes = notes.map((n) =>
+      n.id === note.id ? { ...n, ...note } : n
+    );
+    console.log(note);
+    saveNotes(newNotes);
+    updateCache(() => newNotes);
   };
   return (
     <StickyRegion
@@ -146,4 +161,10 @@ export const HomeScreen = () => {
       ))}
     </StickyRegion>
   );
+};
+
+HomeScreen.defaultProps = {
+  getNotes: async () => JSON.parse(localStorage.getItem("notes") || "[]"),
+  saveNotes: async (notes) =>
+    localStorage.setItem("notes", JSON.stringify(notes))
 };

@@ -119,7 +119,7 @@ export const StickyHeader = ({
       ) : null}
     </div>
   ) : (
-    <div className={classNames(color, " p-2 block w-full")}></div>
+    <div className={classNames(`bg-${color}`, " p-2 block w-full")}></div>
   );
 };
 
