@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.js": "/andela-tempo-sticky-notes/static/js/main.f903f830.js",
+    "main.js": "/andela-tempo-sticky-notes/static/js/main.feeb495a.js",
     "StickyNotes.js": "/andela-tempo-sticky-notes/remoteEntry.js",
-    "static/css/src_bootstrap_js.1e11e338.chunk.css": "/andela-tempo-sticky-notes/static/css/src_bootstrap_js.1e11e338.chunk.css",
-    "static/js/src_bootstrap_js.09cebcfb.chunk.js": "/andela-tempo-sticky-notes/static/js/src_bootstrap_js.09cebcfb.chunk.js",
+    "static/css/src_bootstrap_js.2ab172d0.chunk.css": "/andela-tempo-sticky-notes/static/css/src_bootstrap_js.2ab172d0.chunk.css",
+    "static/js/src_bootstrap_js.e450e27d.chunk.js": "/andela-tempo-sticky-notes/static/js/src_bootstrap_js.e450e27d.chunk.js",
     "static/js/node_modules_babel_runtime_helpers_esm_setPrototypeOf_js.47af5640.chunk.js": "/andela-tempo-sticky-notes/static/js/node_modules_babel_runtime_helpers_esm_setPrototypeOf_js.47af5640.chunk.js",
     "static/js/node_modules_react_index_js.edf905ba.chunk.js": "/andela-tempo-sticky-notes/static/js/node_modules_react_index_js.edf905ba.chunk.js",
     "static/js/vendors-node_modules_react-dom_index_js.407830fb.chunk.js": "/andela-tempo-sticky-notes/static/js/vendors-node_modules_react-dom_index_js.407830fb.chunk.js",
@@ -11,10 +11,10 @@
     "static/js/node_modules_web-vitals_dist_web-vitals_js.effb2adf.chunk.js": "/andela-tempo-sticky-notes/static/js/node_modules_web-vitals_dist_web-vitals_js.effb2adf.chunk.js",
     "static/js/vendors-node_modules_classnames_dedupe_js-node_modules_classnames_index_js-node_modules_luxon-baf9a8.90227ac2.chunk.js": "/andela-tempo-sticky-notes/static/js/vendors-node_modules_classnames_dedupe_js-node_modules_classnames_index_js-node_modules_luxon-baf9a8.90227ac2.chunk.js",
     "index.html": "/andela-tempo-sticky-notes/index.html",
-    "main.f903f830.js.map": "/andela-tempo-sticky-notes/static/js/main.f903f830.js.map",
+    "main.feeb495a.js.map": "/andela-tempo-sticky-notes/static/js/main.feeb495a.js.map",
     "remoteEntry.js.map": "/andela-tempo-sticky-notes/remoteEntry.js.map",
-    "src_bootstrap_js.1e11e338.chunk.css.map": "/andela-tempo-sticky-notes/static/css/src_bootstrap_js.1e11e338.chunk.css.map",
-    "src_bootstrap_js.09cebcfb.chunk.js.map": "/andela-tempo-sticky-notes/static/js/src_bootstrap_js.09cebcfb.chunk.js.map",
+    "src_bootstrap_js.2ab172d0.chunk.css.map": "/andela-tempo-sticky-notes/static/css/src_bootstrap_js.2ab172d0.chunk.css.map",
+    "src_bootstrap_js.e450e27d.chunk.js.map": "/andela-tempo-sticky-notes/static/js/src_bootstrap_js.e450e27d.chunk.js.map",
     "node_modules_babel_runtime_helpers_esm_setPrototypeOf_js.47af5640.chunk.js.map": "/andela-tempo-sticky-notes/static/js/node_modules_babel_runtime_helpers_esm_setPrototypeOf_js.47af5640.chunk.js.map",
     "node_modules_react_index_js.edf905ba.chunk.js.map": "/andela-tempo-sticky-notes/static/js/node_modules_react_index_js.edf905ba.chunk.js.map",
     "vendors-node_modules_react-dom_index_js.407830fb.chunk.js.map": "/andela-tempo-sticky-notes/static/js/vendors-node_modules_react-dom_index_js.407830fb.chunk.js.map",
@@ -23,6 +23,6 @@
     "vendors-node_modules_classnames_dedupe_js-node_modules_classnames_index_js-node_modules_luxon-baf9a8.90227ac2.chunk.js.map": "/andela-tempo-sticky-notes/static/js/vendors-node_modules_classnames_dedupe_js-node_modules_classnames_index_js-node_modules_luxon-baf9a8.90227ac2.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.f903f830.js"
+    "static/js/main.feeb495a.js"
   ]
 }
