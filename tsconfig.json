@@ -1,25 +1,23 @@
 {
   "compilerOptions": {
-    "jsx": "react",
-    "module": "commonjs",
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
-    "checkJs": true,
-    "declaration": true,
-    "emitDeclarationOnly": true,
-    "outDir": "./dist",
-    "lib": ["ES6", "ES2019", "ES2020", "DOM"],
-    "sourceMap": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
     "esModuleInterop": true,
-    "skipLibCheck": true
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
-  "compileOnSave": false,
-  "include": ["typings/**/*.d.ts", "src/**/*.js"],
-  "exclude": [
-    "node_modules/",
-    "**/*.test.js",
-    "**/*.spec.js",
-    "**/*.stories.js",
-    "dist"
-  ],
-  "typeRoots": ["./node_modules/@types", "./typings"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
 }
