@@ -1,0 +1,282 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@mykeels/sticky-notes components/StickyNote/components/StickyHeader Blue 1`] = `
+<div
+  className="bg-blue  p-2 block w-full"
+/>
+`;
+
+exports[`@mykeels/sticky-notes components/StickyNote/components/StickyHeader Expanded Blue 1`] = `
+<div
+  className="bg-blue  px-2 py-2 block w-full relative overflow-visible sticky-header"
+>
+  <div
+    className="inline-block w-1/2 text-xs"
+  >
+    <span
+      className="relative bottom-1"
+    />
+  </div>
+  <div
+    className="inline-block w-1/2 text-right"
+  >
+    <button
+      className="text-2xl text-gray-200 inline-block focus:outline px-4 relative sticky-header-button"
+      onClick={[Function]}
+    >
+      <span
+        className="relative bottom-2"
+      >
+        ...
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`@mykeels/sticky-notes components/StickyNote/components/StickyHeader Expanded Green 1`] = `
+<div
+  className="bg-green  px-2 py-2 block w-full relative overflow-visible sticky-header"
+>
+  <div
+    className="inline-block w-1/2 text-xs"
+  >
+    <span
+      className="relative bottom-1"
+    />
+  </div>
+  <div
+    className="inline-block w-1/2 text-right"
+  >
+    <button
+      className="text-2xl text-gray-200 inline-block focus:outline px-4 relative sticky-header-button"
+      onClick={[Function]}
+    >
+      <span
+        className="relative bottom-2"
+      >
+        ...
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`@mykeels/sticky-notes components/StickyNote/components/StickyHeader Expanded Lime 1`] = `
+<div
+  className="bg-lime  px-2 py-2 block w-full relative overflow-visible sticky-header"
+>
+  <div
+    className="inline-block w-1/2 text-xs"
+  >
+    <span
+      className="relative bottom-1"
+    />
+  </div>
+  <div
+    className="inline-block w-1/2 text-right"
+  >
+    <button
+      className="text-2xl text-gray-200 inline-block focus:outline px-4 relative sticky-header-button"
+      onClick={[Function]}
+    >
+      <span
+        className="relative bottom-2"
+      >
+        ...
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`@mykeels/sticky-notes components/StickyNote/components/StickyHeader Expanded Yellow 1`] = `
+<div
+  className="bg-yellow  px-2 py-2 block w-full relative overflow-visible sticky-header"
+>
+  <div
+    className="inline-block w-1/2 text-xs"
+  >
+    <span
+      className="relative bottom-1"
+    />
+  </div>
+  <div
+    className="inline-block w-1/2 text-right"
+  >
+    <button
+      className="text-2xl text-gray-200 inline-block focus:outline px-4 relative sticky-header-button"
+      onClick={[Function]}
+    >
+      <span
+        className="relative bottom-2"
+      >
+        ...
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`@mykeels/sticky-notes components/StickyNote/components/StickyHeader Green 1`] = `
+<div
+  className="bg-green  p-2 block w-full"
+/>
+`;
+
+exports[`@mykeels/sticky-notes components/StickyNote/components/StickyHeader Index 1`] = `
+<div
+  className="bg-blue  px-2 py-2 block w-full relative overflow-visible sticky-header"
+>
+  <div
+    className="inline-block w-1/2 text-xs"
+  >
+    <span
+      className="relative bottom-1"
+    />
+  </div>
+  <div
+    className="inline-block w-1/2 text-right"
+  >
+    <button
+      className="text-2xl text-gray-200 inline-block focus:outline px-4 relative sticky-header-button"
+      onClick={[Function]}
+    >
+      <span
+        className="relative bottom-2"
+      >
+        ...
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`@mykeels/sticky-notes components/StickyNote/components/StickyHeader Lime 1`] = `
+<div
+  className="bg-lime  p-2 block w-full"
+/>
+`;
+
+exports[`@mykeels/sticky-notes components/StickyNote/components/StickyHeader With Open Controls 1`] = `
+<div
+  className="bg-yellow  px-2 py-2 block w-full relative overflow-visible sticky-header"
+>
+  <div
+    className="inline-block w-1/2 text-xs"
+  >
+    <span
+      className="relative bottom-1"
+    />
+  </div>
+  <div
+    className="inline-block w-1/2 text-right"
+  >
+    <button
+      className="text-2xl text-gray-200 inline-block focus:outline px-4 relative sticky-header-button"
+      onClick={[Function]}
+    >
+      <span
+        className="relative bottom-2"
+      >
+        ...
+      </span>
+    </button>
+    <div
+      className="border-yellow absolute bg-gray-300 w-64 h-32 inline-block right-0 top-0 sticky-header-control border-2"
+      style={
+        Object {
+          "top": "48px",
+        }
+      }
+    >
+      <div
+        className="block w-full py-2"
+      >
+        <div
+          className="inline-block w-1/4 p-2"
+        >
+          <button
+            className="bg-blue p-2 w-8 h-8 border-transparent hover:border-gray-200 border-2"
+            onClick={[Function]}
+          >
+             
+          </button>
+        </div>
+        <div
+          className="inline-block w-1/4 p-2"
+        >
+          <button
+            className="bg-yellow p-2 w-8 h-8 border-transparent hover:border-gray-200 border-2"
+            onClick={[Function]}
+          >
+             
+          </button>
+        </div>
+        <div
+          className="inline-block w-1/4 p-2"
+        >
+          <button
+            className="bg-lime p-2 w-8 h-8 border-transparent hover:border-gray-200 border-2"
+            onClick={[Function]}
+          >
+             
+          </button>
+        </div>
+        <div
+          className="inline-block w-1/4 p-2"
+        >
+          <button
+            className="bg-green p-2 w-8 h-8 border-transparent hover:border-gray-200 border-2"
+            onClick={[Function]}
+          >
+             
+          </button>
+        </div>
+      </div>
+      <div
+        className="text-white py-2"
+      >
+        <div
+          className="block text-center text-xs"
+        >
+          z-position
+        </div>
+        <div
+          className="block w-full"
+        >
+          <div
+            className="inline-block w-1/3 text-right"
+          >
+            <button
+              onClick={[Function]}
+            >
+              ⬅️
+            </button>
+          </div>
+          <div
+            className="inline-block w-1/3 text-center text-lg"
+          >
+            1
+          </div>
+          <div
+            className="inline-block w-1/3 text-left"
+          >
+            <button
+              onClick={[Function]}
+            >
+              ➡️
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`@mykeels/sticky-notes components/StickyNote/components/StickyHeader Yellow 1`] = `
+<div
+  className="bg-yellow  p-2 block w-full"
+/>
+`;
