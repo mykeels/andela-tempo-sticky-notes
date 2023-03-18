@@ -14,15 +14,15 @@ import { StickyHeader } from "./components/StickyNote/components";
 import { Note, setDefaultProps } from "../../common";
 
 type HomeScreenProps = {
-  getNotes: () => Promise<Note[]>;
-  saveNotes: (notes: Note[]) => Promise<any>;
+  getNotes?: () => Promise<Note[]>;
+  saveNotes?: (notes: Note[]) => Promise<any>;
 }
 
 type NotePreview = Omit<Note, "id" | "text" | "date">;
 
 export const HomeScreen = ({ getNotes, saveNotes }: HomeScreenProps) => {
   const [preview, setPreview] = useState<NotePreview | null>(null);
-  const { data: notes = [] } = useQuery(["notes"], getNotes);
+  const { data: notes = [] } = useQuery(["notes"], getNotes!);
   const { updateCache } = useCacheInvalidation(["notes"], 100);
   const { setCallback } = useContext(DeleteContext);
   const addNote = (text: string) => {
@@ -41,7 +41,7 @@ export const HomeScreen = ({ getNotes, saveNotes }: HomeScreenProps) => {
         zIndex: 1
       }
     ];
-    saveNotes(newNotes);
+    saveNotes!(newNotes);
     setPreview(null);
     updateCache(() => newNotes);
   };
@@ -49,29 +49,34 @@ export const HomeScreen = ({ getNotes, saveNotes }: HomeScreenProps) => {
     const newNotes = notes.map((n) =>
       n.id === note.id ? { ...n, ...note } : n
     );
-    saveNotes(newNotes);
+    saveNotes!(newNotes);
     updateCache(() => newNotes);
   };
   const deleteNote = (note: Note) => {
     const newNotes = notes.filter((n) => n.id !== note.id);
-    saveNotes(newNotes);
+    saveNotes!(newNotes);
     updateCache(() => newNotes);
   };
   return (
     <StickyRegion
       className="relative"
       onDoubleClick={(e) => {
-        if (preview) {
-          setPreview({
-            ...preview,
-            color: "blue",
-            zIndex: 1,
-            position: {
-              top: e.y - Math.floor(DEFAULT_NOTE_HEIGHT / 4),
-              left: e.x - Math.floor(DEFAULT_NOTE_WIDTH / 2)
-            }
-          });
-        }
+        const previewDefaults = {
+          color: "blue",
+          zIndex: 1,
+          position: {
+            top: e.y - Math.floor(DEFAULT_NOTE_HEIGHT / 4),
+            left: e.x - Math.floor(DEFAULT_NOTE_WIDTH / 2)
+          },
+          size: {
+            width: DEFAULT_NOTE_WIDTH,
+            height: DEFAULT_NOTE_HEIGHT
+          }
+        } as NotePreview;
+        setPreview({
+          ...(preview || previewDefaults),
+          ...previewDefaults
+        });
       }}
     >
       <>

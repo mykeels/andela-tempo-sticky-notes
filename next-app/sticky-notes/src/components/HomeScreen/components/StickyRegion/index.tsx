@@ -1,5 +1,3 @@
-import "./StickyRegion.css";
-
 import React, { useContext, useState } from "react";
 import classNames from "classnames/dedupe";
 import { DeleteContext } from "../../../../common/contexts/delete.context";
