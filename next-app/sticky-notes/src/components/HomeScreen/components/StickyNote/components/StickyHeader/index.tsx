@@ -3,8 +3,8 @@ import classNames from "classnames";
 import { DateTime } from "luxon";
 import React, { useEffect, useRef, useState } from "react";
 
-import { NoteColor } from "@/common/sticky-note.model";
-import { setDefaultProps } from "@/common";
+import { NoteColor } from "../../../../../../common/sticky-note.model";
+import { setDefaultProps } from "../../../../../../common";
 
 type StickyHeaderProps = {
   isExpanded?: boolean;

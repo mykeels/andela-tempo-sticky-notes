@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
-import { StickyHeader } from "./";
+import { StickyHeader } from ".";
+import { NoteColor } from "../../../../../../common";
 
 export default {
   title: "components/StickyNote/components/StickyHeader",
@@ -8,7 +9,7 @@ export default {
 };
 
 export const Index = () => {
-  const [color, setColor] = useState("blue");
+  const [color, setColor] = useState<NoteColor>("blue");
   const [zIndex, setZIndex] = useState(1);
 
   return (

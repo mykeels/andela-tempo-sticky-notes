@@ -7,12 +7,11 @@ import { useCacheInvalidation } from "../../hooks";
 import {
   DEFAULT_NOTE_HEIGHT,
   DEFAULT_NOTE_WIDTH,
-  StickyNote
-} from "./components/StickyNote";
+  StickyNote,
+  StickyRegion
+} from "./components";
 import { StickyHeader } from "./components/StickyNote/components";
-import { StickyRegion } from "./components/StickyRegion";
-import { Note } from "../../common/sticky-note.model";
-
+import { Note, setDefaultProps } from "../../common";
 
 type HomeScreenProps = {
   getNotes: () => Promise<Note[]>;
@@ -188,8 +187,9 @@ export const HomeScreen = ({ getNotes, saveNotes }: HomeScreenProps) => {
   );
 };
 
-HomeScreen.defaultProps = {
+setDefaultProps(HomeScreen, {
   getNotes: async () => JSON.parse(localStorage.getItem("notes") || "[]"),
   saveNotes: async (notes) =>
     localStorage.setItem("notes", JSON.stringify(notes))
-} as Partial<HomeScreenProps>;
+});
+

@@ -7,10 +7,10 @@ export default {
   component: StickyRegion
 };
 
-export const Empty = () => <StickyRegion />;
+export const Empty = () => <StickyRegion onDoubleClick={() => {}} />;
 
 export const WithContent = () => (
-  <StickyRegion>
+  <StickyRegion onDoubleClick={() => {}}>
     <div>Hello World</div>
   </StickyRegion>
 );

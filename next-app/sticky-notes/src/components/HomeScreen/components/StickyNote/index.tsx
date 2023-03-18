@@ -3,7 +3,6 @@ import classNames from "classnames";
 
 import { StickyHeader } from "./components";
 import { NotePosition, NoteSize, NotePreview } from "../../../../common/sticky-note.model";
-import { assert } from "@/common";
 
 const HEIGHT_OFFSET = 32;
 export const DEFAULT_NOTE_WIDTH = 192;
