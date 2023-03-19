@@ -1,14 +1,8 @@
 # StickyNotes App
 
-This project was built to meet the requirements of a Front-end developer Hiring test by Tempo.io.
-
 ![Preview Image](https://user-images.githubusercontent.com/11996508/193679530-35abf198-5fbf-43de-8148-337ee0c8c5d4.png)
 
-## 1. Planning Phase
-
-See [Project Description Document](./docs/Front-end%20developer%20Assessment.pdf).
-
-## 2. Defining Requirements
+## 1. Requirements
 
 From the above document, we can extract the following requirements.
 
@@ -24,11 +18,11 @@ From the above document, we can extract the following requirements.
 
 Using the above Requirements, we can come up with a [Formal User Requirement Specification](./specs/) using Gherkin syntax.
 
-## 3. Design and Prototyping
+## 2. Design and Prototyping
 
 See [Figma](https://www.figma.com/file/Gu3kf4IjUVi306ZvLoSfCT/Sticky-Notes?node-id=1%3A59).
 
-## 4. Software Development
+## 3. How to use
 
 To setup, run `npm install`.
 
@@ -36,7 +30,7 @@ To view Storybook, run `npm run storybook`.
 
 To start the app, run `npm start`.
 
-## 5. Testing
+## 4. Testing
 
 Frontend tests use snapshot testing via Jest and Storybook.
 

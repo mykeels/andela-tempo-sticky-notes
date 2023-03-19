@@ -2,7 +2,7 @@ name: Build App
 
 on:
   push:
-    branches: [ '*' ]
+    branches: [ 'master' ]
 
 jobs:
   build:
@@ -21,8 +21,17 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - run: printf "\nPUBLIC_URL=/andela-tempo-sticky-notes\n" >> .env
     - run: npm ci
     - name: Build App
       run: npm run build
     - name: Export App
       run: npm run export
+    - name: Build Storybook
+      run: npm run build-storybook
+    - run: mv ./storybook-static ./out/storybook
+    - name: Deploy to gh-pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.OUR_GITHUB_TOKEN }}
+        publish_dir: ./out
