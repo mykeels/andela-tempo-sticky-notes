@@ -21,7 +21,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: printf "\nPUBLIC_URL=/andela-tempo-sticky-notes\n" >> .env
+    - run: printf "\nPUBLIC_URL=/andela-tempo-sticky-notes/\n" >> .env
     - run: npm ci
     - name: Build App
       run: npm run build
