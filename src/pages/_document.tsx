@@ -4,6 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+        <base href={process.env.PUBLIC_URL || "/"} />
         <link rel="shortcut icon" href="/favicon.svg" />
         <meta
           name="description"
