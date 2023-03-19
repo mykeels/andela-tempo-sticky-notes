@@ -13,7 +13,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [18.x]
 
     steps:
     - uses: actions/checkout@v2
@@ -23,4 +23,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
     - name: Build App
-      run: NODE_ENV=production npm run build
+      run: npm run build
+    - name: Export App
+      run: npm run export
